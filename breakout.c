@@ -113,6 +113,10 @@ GRect initPaddle(GWindow window)
     // TODO
     // inititalize paddle
     GRect paddle = newGRect(WIDTH / 2 - PWIDTH / 2, HEIGHT - HEIGHT / 5, PWIDTH, PHEIGHT);
+    
+    // fill rectange color
+    setFilled(paddle, true);
+    
 }
 
 /**
