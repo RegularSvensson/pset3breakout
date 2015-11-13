@@ -40,7 +40,7 @@
 // height and width of bricks
 #define WHITESPACE (WIDTH / 100)
 #define BHEIGHT 10
-#define BWIDTH 30
+#define BWIDTH (WIDTH / COLS - WHITESPACE)
 
 // prototypes
 void initBricks(GWindow window);
