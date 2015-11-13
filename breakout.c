@@ -103,6 +103,9 @@ int main(void)
                 setLocation(paddle, x, HEIGHT - HEIGHT / 5);
             }
         }
+
+        // move ball along angle
+        move(ball, xVelocity, yVelocity);
         
         {
         }
