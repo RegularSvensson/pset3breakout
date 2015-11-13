@@ -104,6 +104,16 @@ int main(void)
         // move ball along x-axis
         move(ball, velocity, 0);
         
+        // bounce off right & left edge of window
+        if (getX(ball) + getWidth(ball) >= getWidth(window))
+        {
+            velocity = -velocity;
+        }
+        else if (getX(ball) <= 0)
+        {
+            velocity = -velocity;
+        }
+        
     }
 
     // wait for click before exiting
