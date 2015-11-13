@@ -159,6 +159,12 @@ int main(void)
                     yVelocity = -yVelocity;
                 }
             }
+            // remove brick that is hit   
+            else if (strcmp(getType(object), "GRect") == 0)
+            {
+                removeGWindow(window, object);
+                
+            }
         }
     }
 
