@@ -79,6 +79,12 @@ int main(void)
     // number of points initially
     int points = 0;
 
+    // randomize initial ball velocity x-axis
+    double xVelocity = drand48() * 2.0;
+    
+    // initial ball velocity y-axis
+    double yVelocity = 2.0;
+    
     // keep playing until game over
     while (lives > 0 && bricks > 0)
     {
@@ -97,6 +103,33 @@ int main(void)
                 setLocation(paddle, x, HEIGHT - HEIGHT / 5);
             }
         }
+
+        // move ball along angle
+        move(ball, xVelocity, yVelocity);
+        
+        // bounce off top edge of window
+        if(getY(ball) <= 0)
+        {
+            yVelocity = -yVelocity;
+        }
+        // bounce off right edge of window
+        else if(getX(ball) + getWidth(ball) >= getWidth(window))
+        {
+            xVelocity = -xVelocity;
+        }
+        // bounce off left edge of window
+        else if (getX(ball) <= 0)
+        {
+            xVelocity = -xVelocity;
+        }
+        // bounce off bottom edge of window (for now)
+        else if(getY(ball) + RADIUS >= HEIGHT)
+        {
+            yVelocity = -yVelocity;
+        }
+        
+        // linger before moving again
+        pause(10);
     }
 
     // wait for click before exiting
