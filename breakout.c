@@ -78,6 +78,9 @@ int main(void)
     while (lives > 0 && bricks > 0)
     {
         // TODO
+        // check for mouse event
+        GEvent event = getNextEvent(MOUSE_EVENT);
+        
     }
 
     // wait for click before exiting
