@@ -117,7 +117,10 @@ int main(void)
         {
             xVelocity = -xVelocity;
         }
+        // bounce off left edge of window
+        else if (getX(ball) <= 0)
         {
+            xVelocity = -xVelocity;
         }
         {
         }
