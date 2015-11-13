@@ -87,7 +87,10 @@ int main(void)
     
     // initial ball velocity y-axis
     double yVelocity = 2.0;
-    
+
+    // wait for click before exiting
+    waitForClick();
+
     // keep playing until game over
     while (lives > 0 && bricks > 0)
     {
@@ -125,12 +128,18 @@ int main(void)
         {
             xVelocity = -xVelocity;
         }
-        // bounce off bottom edge of window (for now)
+        // lose life and pause if bottom edge of window hit
         else if(getY(ball) + RADIUS >= HEIGHT)
         {
-            yVelocity = -yVelocity;
+            // lose life
+            lives--;
+
+            // pause game
+            waitForClick();
+            
+            // set ball in middle 
+            setLocation(ball, WIDTH / 2 - RADIUS, HEIGHT / 2 - RADIUS);
         }
-        
         // linger before moving again
         pause(10);
         
@@ -169,9 +178,6 @@ int main(void)
             }
         }
     }
-
-    // wait for click before exiting
-    waitForClick();
 
     // game over
     closeGWindow(window);
