@@ -146,6 +146,11 @@ int main(void)
                 yVelocity = -yVelocity;
             }
         }
+        
+        // detect if ball hit any object
+        if (object != NULL)
+        {
+        }
     }
 
     // wait for click before exiting
