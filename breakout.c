@@ -144,6 +144,8 @@ void initBricks(GWindow window)
         // reset x coordinate
         x = WHITESPACE / 2;
         
+        // increment y coordinate
+        y += BHEIGHT + WHITESPACE;
     }
 }
 
