@@ -132,6 +132,9 @@ void initBricks(GWindow window)
             // fill rectangle color
             setFilled(brick, true);
             
+            // set color of brick
+            setColor(brick, colors[i]);
+            
         }
     }
 }
