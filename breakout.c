@@ -167,6 +167,8 @@ GOval initBall(GWindow window)
     // add ball to window
     add(window, ball);
     
+    // return GOval ball
+    return ball;
 }
 
 /**
