@@ -37,6 +37,10 @@
 #define PHEIGHT 20
 #define PWIDTH 80
 
+// height and width of bricks
+#define BHEIGHT 10
+#define BWIDTH 30
+
 // prototypes
 void initBricks(GWindow window);
 GOval initBall(GWindow window);
