@@ -114,6 +114,8 @@ int main(void)
             velocity = -velocity;
         }
         
+        // linger before moving again
+        pause(10);
     }
 
     // wait for click before exiting
