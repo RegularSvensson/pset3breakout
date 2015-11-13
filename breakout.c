@@ -135,6 +135,9 @@ void initBricks(GWindow window)
             // set color of brick
             setColor(brick, colors[i]);
             
+            // add brick to window
+            add(window, brick);
+            
         }
     }
 }
