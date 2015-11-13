@@ -161,6 +161,9 @@ GOval initBall(GWindow window)
     // fill oval color
     setFilled(ball, true);
     
+    // set color to black
+    setColor(ball, "BLACK");
+    
 }
 
 /**
