@@ -150,6 +150,10 @@ int main(void)
         // detect if ball hit any object
         if (object != NULL)
         {
+            // bounce off paddle
+            if (object == paddle)
+            {
+            }
         }
     }
 
