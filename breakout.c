@@ -138,6 +138,8 @@ void initBricks(GWindow window)
             // add brick to window
             add(window, brick);
             
+            // increment x coordinate
+            x += BWIDTH + WHITESPACE;
         }
     }
 }
