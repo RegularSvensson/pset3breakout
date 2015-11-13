@@ -81,6 +81,11 @@ int main(void)
         // check for mouse event
         GEvent event = getNextEvent(MOUSE_EVENT);
         
+        // if the event was movement
+        if (getEventType(event) == MOUSE_MOVED)
+        {
+            
+        }
     }
 
     // wait for click before exiting
