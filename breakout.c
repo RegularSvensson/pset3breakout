@@ -115,7 +115,11 @@ void initBricks(GWindow window)
     // for every row
     for (int i = 0; i < ROWS; i++)
     {
-        
+        // for every column
+        for (int j = 0; i < COLUMNS; j++)
+        {
+            
+        }
     }
 }
 
