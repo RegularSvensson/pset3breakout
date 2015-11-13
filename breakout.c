@@ -122,7 +122,10 @@ int main(void)
         {
             xVelocity = -xVelocity;
         }
+        // bounce off bottom edge of window (for now)
+        else if(getY(ball) + RADIUS >= HEIGHT)
         {
+            yVelocity = -yVelocity;
         }
         
         // linger before moving again
