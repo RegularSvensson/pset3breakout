@@ -79,8 +79,11 @@ int main(void)
     // number of points initially
     int points = 0;
 
-    // initial ball velocity
-    double velocity = 2.0;
+    // initial ball velocity x-axis
+    double xVelocity = 2.0;
+    
+    // initial ball velocity y-axis
+    double yVelocity = 2.0;
     
     // keep playing until game over
     while (lives > 0 && bricks > 0)
