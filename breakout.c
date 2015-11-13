@@ -129,6 +129,9 @@ void initBricks(GWindow window)
             // initialize brick
             GRect brick = newGRect(x, y, BWIDTH, BHEIGHT);
             
+            // fill rectangle color
+            setFilled(brick, true);
+            
         }
     }
 }
