@@ -35,6 +35,7 @@
 
 // height and width of paddle
 #define PHEIGHT (HEIGHT / 60)
+#define PWIDTH (WIDTH / 10)
 
 // height and width of bricks
 #define BHEIGHT 10
