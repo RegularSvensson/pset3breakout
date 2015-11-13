@@ -123,6 +123,8 @@ GRect initPaddle(GWindow window)
     // add paddle to window
     add(window, paddle);
     
+    // return GRect paddle
+    return paddle;
 }
 
 /**
