@@ -131,9 +131,7 @@ int main(void)
         // lose life and pause if bottom edge of window hit
         else if(getY(ball) + RADIUS >= HEIGHT)
         {
-            yVelocity = -yVelocity;
         }
-        
         // linger before moving again
         pause(10);
         
@@ -172,9 +170,6 @@ int main(void)
             }
         }
     }
-
-    // wait for click before exiting
-    waitForClick();
 
     // game over
     closeGWindow(window);
