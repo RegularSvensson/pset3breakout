@@ -34,8 +34,7 @@
 #define LIVES 3
 
 // height and width of paddle
-#define PHEIGHT 20
-#define PWIDTH 80
+#define PHEIGHT (HEIGHT / 60)
 
 // height and width of bricks
 #define BHEIGHT 10
