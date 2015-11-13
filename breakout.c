@@ -78,6 +78,20 @@ int main(void)
     while (lives > 0 && bricks > 0)
     {
         // TODO
+        // check for mouse event
+        GEvent event = getNextEvent(MOUSE_EVENT);
+        
+        // if there was mouse event
+        if (event != NULL)
+        {
+            // if the event was movement
+            if (getEventType(event) == MOUSE_MOVED)
+            {
+                // make paddle follow cursor
+                double x = getX(event) - getWidth(paddle) / 2;
+                setLocation(paddle, x, HEIGHT - HEIGHT / 5);
+            }
+        }
     }
 
     // wait for click before exiting
