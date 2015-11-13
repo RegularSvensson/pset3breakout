@@ -50,6 +50,9 @@ GLabel initScoreboard(GWindow window);
 void updateScoreboard(GWindow window, GLabel label, int points);
 GObject detectCollision(GWindow window, GOval ball);
 
+// removeGWindow protoype
+void removeGWindow(GWindow gw, GObject gobj);
+
 int main(void)
 {
     // seed pseudorandom number generator
@@ -140,6 +143,28 @@ int main(void)
             // only bounce if positive downward velocity
             if (yVelocity > 0)
             {
+                yVelocity = -yVelocity;
+            }
+        }
+        
+        // detect if ball hit any object
+        if (object != NULL)
+        {
+            // bounce off paddle
+            if (object == paddle)
+            {
+                // only bounce if positive downward velocity
+                if (yVelocity > 0)
+                {
+                    yVelocity = -yVelocity;
+                }
+            }
+            // remove brick that is hit   
+            else if (strcmp(getType(object), "GRect") == 0)
+            {
+                removeGWindow(window, object);
+                
+                // bounce ball off brick 
                 yVelocity = -yVelocity;
             }
         }
