@@ -130,6 +130,10 @@ int main(void)
         
         // linger before moving again
         pause(10);
+        
+        // detect collision object with ball
+        GObject object = detectCollision(window, ball);
+        
     }
 
     // wait for click before exiting
