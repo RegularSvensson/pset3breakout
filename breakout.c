@@ -153,6 +153,11 @@ int main(void)
             // bounce off paddle
             if (object == paddle)
             {
+                // only bounce if positive downward velocity
+                if (yVelocity > 0)
+                {
+                    yVelocity = -yVelocity;
+                }
             }
         }
     }
