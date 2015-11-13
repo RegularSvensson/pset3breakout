@@ -118,6 +118,9 @@ int main(void)
         pause(10);
         */
         
+        // move ball along y-axis
+        move(ball, 0, velocity);
+        
     }
 
     // wait for click before exiting
