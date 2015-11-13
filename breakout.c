@@ -81,8 +81,8 @@ int main(void)
         // check for mouse event
         GEvent event = getNextEvent(MOUSE_EVENT);
         
-        // if the event was movement
-        if (getEventType(event) == MOUSE_MOVED)
+        // if there was mouse event
+        if (event != NULL)
         {
             
         }
