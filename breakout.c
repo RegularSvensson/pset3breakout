@@ -130,6 +130,19 @@ int main(void)
         
         // linger before moving again
         pause(10);
+        
+        // detect collision object with ball
+        GObject object = detectCollision(window, ball);
+        
+        // bounce off paddle
+        if (object == paddle)
+        {
+            // only bounce if positive downward velocity
+            if (yVelocity > 0)
+            {
+                yVelocity = -yVelocity;
+            }
+        }
     }
 
     // wait for click before exiting
