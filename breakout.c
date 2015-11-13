@@ -84,7 +84,11 @@ int main(void)
         // if there was mouse event
         if (event != NULL)
         {
-            
+            // if the event was movement
+            if (getEventType(event) == MOUSE_MOVED)
+            {
+                
+            }
         }
     }
 
