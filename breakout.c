@@ -134,6 +134,10 @@ int main(void)
         // detect collision object with ball
         GObject object = detectCollision(window, ball);
         
+        // bounce off paddle
+        if (object == paddle)
+        {
+        }
     }
 
     // wait for click before exiting
