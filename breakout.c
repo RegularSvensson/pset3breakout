@@ -131,6 +131,9 @@ int main(void)
         // lose life and pause if bottom edge of window hit
         else if(getY(ball) + RADIUS >= HEIGHT)
         {
+            // lose life
+            lives--;
+
         }
         // linger before moving again
         pause(10);
