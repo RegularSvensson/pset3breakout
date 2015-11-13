@@ -87,7 +87,10 @@ int main(void)
     
     // initial ball velocity y-axis
     double yVelocity = 2.0;
-    
+
+    // wait for click before exiting
+    waitForClick();
+
     // keep playing until game over
     while (lives > 0 && bricks > 0)
     {
