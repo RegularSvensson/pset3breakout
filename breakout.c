@@ -113,6 +113,9 @@ int main(void)
 void initBricks(GWindow window)
 {
     // TODO
+    // array of colors
+    char* colors[COLS] = {"RED", "ORANGE", "YELLOW", "GREEN", "BLUE"};
+    
     // for every row
     for (int i = 0; i < ROWS; i++)
     {
