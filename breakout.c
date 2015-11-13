@@ -121,6 +121,16 @@ int main(void)
         // move ball along y-axis
         move(ball, 0, velocity);
         
+        // bounce off top and bottom edge of window
+        if(getY(ball) + RADIUS >= HEIGHT)
+        {
+            velocity = -velocity;
+        }
+        else if (getY(ball) <= 0)
+        {
+            velocity = -velocity;
+        }
+        
     }
 
     // wait for click before exiting
