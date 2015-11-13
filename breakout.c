@@ -137,6 +137,8 @@ int main(void)
             // pause game
             waitForClick();
             
+            // set ball in middle 
+            setLocation(ball, WIDTH / 2 - RADIUS, HEIGHT / 2 - RADIUS);
         }
         // linger before moving again
         pause(10);
