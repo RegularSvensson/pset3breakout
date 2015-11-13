@@ -164,6 +164,9 @@ GOval initBall(GWindow window)
     // set color to black
     setColor(ball, "BLACK");
     
+    // add ball to window
+    add(window, ball);
+    
 }
 
 /**
