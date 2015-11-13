@@ -134,6 +134,9 @@ int main(void)
             // lose life
             lives--;
 
+            // pause game
+            waitForClick();
+            
         }
         // linger before moving again
         pause(10);
