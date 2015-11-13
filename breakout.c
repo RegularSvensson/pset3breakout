@@ -117,6 +117,9 @@ GRect initPaddle(GWindow window)
     // fill rectange color
     setFilled(paddle, true);
     
+    // set color to black
+    setColor(paddle, "BLACK");
+    
 }
 
 /**
