@@ -50,6 +50,9 @@ GLabel initScoreboard(GWindow window);
 void updateScoreboard(GWindow window, GLabel label, int points);
 GObject detectCollision(GWindow window, GOval ball);
 
+// removeGWindow protoype
+void removeGWindow(GWindow gw, GObject gobj);
+
 int main(void)
 {
     // seed pseudorandom number generator
