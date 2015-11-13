@@ -34,8 +34,8 @@
 #define LIVES 3
 
 // height and width of paddle
-#define PHEIGHT 5
-#define PWIDTH 20
+#define PHEIGHT 20
+#define PWIDTH 80
 
 // prototypes
 void initBricks(GWindow window);
