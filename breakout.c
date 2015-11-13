@@ -126,6 +126,8 @@ void initBricks(GWindow window)
         // for every column
         for (int j = 0; j < COLS; j++)
         {
+            // initialize brick
+            GRect brick = newGRect(x, y, BWIDTH, BHEIGHT);
             
         }
     }
