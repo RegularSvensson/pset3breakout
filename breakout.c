@@ -100,6 +100,10 @@ int main(void)
                 setLocation(paddle, x, HEIGHT - HEIGHT / 5);
             }
         }
+        
+        // move ball along x-axis
+        move(ball, velocity, 0);
+        
     }
 
     // wait for click before exiting
