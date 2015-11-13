@@ -107,7 +107,10 @@ int main(void)
         // move ball along angle
         move(ball, xVelocity, yVelocity);
         
+        // bounce off top edge of window
+        if(getY(ball) <= 0)
         {
+            yVelocity = -yVelocity;
         }
         {
         }
