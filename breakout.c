@@ -87,7 +87,9 @@ int main(void)
             // if the event was movement
             if (getEventType(event) == MOUSE_MOVED)
             {
-                
+                // make paddle follow cursor
+                double x = getX(event) - getWidth(paddle) / 2;
+                setLocation(paddle, x, HEIGHT - HEIGHT / 5);
             }
         }
     }
