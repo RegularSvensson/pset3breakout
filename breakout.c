@@ -155,7 +155,9 @@ void initBricks(GWindow window)
 GOval initBall(GWindow window)
 {
     // TODO
-    return NULL;
+    // initialize ball
+    GOval ball = newGOval(WIDTH / 2 - RADIUS, HEIGHT / 2 - RADIUS, RADIUS, RADIUS);
+    
 }
 
 /**
