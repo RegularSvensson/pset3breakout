@@ -112,6 +112,11 @@ int main(void)
 void initBricks(GWindow window)
 {
     // TODO
+    // for every row
+    for (int i = 0; i < ROWS; i++)
+    {
+        
+    }
 }
 
 /**
