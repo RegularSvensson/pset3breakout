@@ -120,6 +120,9 @@ GRect initPaddle(GWindow window)
     // set color to black
     setColor(paddle, "BLACK");
     
+    // add paddle to window
+    add(window, paddle);
+    
 }
 
 /**
