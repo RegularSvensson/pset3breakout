@@ -34,8 +34,13 @@
 #define LIVES 3
 
 // height and width of paddle
-#define PHEIGHT 20
-#define PWIDTH 80
+#define PHEIGHT (HEIGHT / 60)
+#define PWIDTH (WIDTH / 10)
+
+// height and width of bricks
+#define WHITESPACE (WIDTH / 100)
+#define BHEIGHT 10
+#define BWIDTH (WIDTH / COLS - WHITESPACE)
 
 // prototypes
 void initBricks(GWindow window);
@@ -108,6 +113,40 @@ int main(void)
 void initBricks(GWindow window)
 {
     // TODO
+    // array of colors
+    char* colors[COLS] = {"RED", "ORANGE", "YELLOW", "GREEN", "BLUE"};
+    
+    // x and y coordinates
+    double x = WHITESPACE / 2;
+    double y = WHITESPACE / 2;
+    
+    // for every row
+    for (int i = 0; i < ROWS; i++)
+    {
+        // for every column
+        for (int j = 0; j < COLS; j++)
+        {
+            // initialize brick
+            GRect brick = newGRect(x, y, BWIDTH, BHEIGHT);
+            
+            // fill rectangle color
+            setFilled(brick, true);
+            
+            // set color of brick
+            setColor(brick, colors[i]);
+            
+            // add brick to window
+            add(window, brick);
+            
+            // increment x coordinate
+            x += BWIDTH + WHITESPACE;
+        }
+        // reset x coordinate
+        x = WHITESPACE / 2;
+        
+        // increment y coordinate
+        y += BHEIGHT + WHITESPACE;
+    }
 }
 
 /**
@@ -128,7 +167,7 @@ GRect initPaddle(GWindow window)
     // inititalize paddle
     GRect paddle = newGRect(WIDTH / 2 - PWIDTH / 2, HEIGHT - HEIGHT / 5, PWIDTH, PHEIGHT);
     
-    // fill rectange color
+    // fill rectangle color
     setFilled(paddle, true);
     
     // set color to black
