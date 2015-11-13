@@ -33,6 +33,10 @@
 // lives
 #define LIVES 3
 
+// height and width of paddle
+#define PHEIGHT 5
+#define PWIDTH 20
+
 // prototypes
 void initBricks(GWindow window);
 GOval initBall(GWindow window);
