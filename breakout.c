@@ -116,6 +116,10 @@ void initBricks(GWindow window)
     // array of colors
     char* colors[COLS] = {"RED", "ORANGE", "YELLOW", "GREEN", "BLUE"};
     
+    // x and y coordinates
+    double x = WHITESPACE / 2;
+    double y = WHITESPACE / 2;
+    
     // for every row
     for (int i = 0; i < ROWS; i++)
     {
