@@ -164,6 +164,8 @@ int main(void)
             {
                 removeGWindow(window, object);
                 
+                // bounce ball off brick 
+                yVelocity = -yVelocity;
             }
         }
     }
