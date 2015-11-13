@@ -158,6 +158,9 @@ GOval initBall(GWindow window)
     // initialize ball
     GOval ball = newGOval(WIDTH / 2 - RADIUS, HEIGHT / 2 - RADIUS, RADIUS, RADIUS);
     
+    // fill oval color
+    setFilled(ball, true);
+    
 }
 
 /**
