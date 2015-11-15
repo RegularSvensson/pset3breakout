@@ -114,12 +114,12 @@ int main(void)
         move(ball, xVelocity, yVelocity);
         
         // bounce off top edge of window
-        if(getY(ball) <= 0)
+        if (getY(ball) <= 0)
         {
             yVelocity = -yVelocity;
         }
         // bounce off right edge of window
-        else if(getX(ball) + getWidth(ball) >= getWidth(window))
+        else if (getX(ball) + getWidth(ball) >= getWidth(window))
         {
             xVelocity = -xVelocity;
         }
@@ -129,7 +129,7 @@ int main(void)
             xVelocity = -xVelocity;
         }
         // lose life and pause if bottom edge of window hit
-        else if(getY(ball) + RADIUS >= HEIGHT)
+        else if (getY(ball) + RADIUS >= HEIGHT)
         {
             // lose life
             lives--;
@@ -239,7 +239,8 @@ GOval initBall(GWindow window)
 {
     // TODO
     // initialize ball
-    GOval ball = newGOval(WIDTH / 2 - RADIUS, HEIGHT / 2 - RADIUS, RADIUS, RADIUS);
+    GOval ball = newGOval(WIDTH / 2 - RADIUS, 
+        HEIGHT / 2 - RADIUS, RADIUS, RADIUS);
     
     // fill oval color
     setFilled(ball, true);
@@ -261,7 +262,8 @@ GRect initPaddle(GWindow window)
 {
     // TODO
     // inititalize paddle
-    GRect paddle = newGRect(WIDTH / 2 - PWIDTH / 2, HEIGHT - HEIGHT / 5, PWIDTH, PHEIGHT);
+    GRect paddle = newGRect(WIDTH / 2 - PWIDTH / 2, 
+        HEIGHT - HEIGHT / 5, PWIDTH, PHEIGHT);
     
     // fill rectangle color
     setFilled(paddle, true);
