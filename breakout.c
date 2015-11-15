@@ -279,6 +279,9 @@ GLabel initScoreboard(GWindow window)
     // initalize scoreboard
     GLabel label = newGLabel("0");
     
+    // set scoreboard font
+    setFont(label, "SansSerif-18");
+    
 }
 
 /**
