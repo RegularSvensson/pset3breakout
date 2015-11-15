@@ -282,6 +282,11 @@ GLabel initScoreboard(GWindow window)
     // set scoreboard font
     setFont(label, "SansSerif-18");
     
+    // center label in window
+    double x = (getWidth(window) - getWidth(label)) / 2;
+    double y = (getHeight(window) - getHeight(label)) / 2;
+    setLocation(label, x, y);
+    
 }
 
 /**
