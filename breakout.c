@@ -1,3 +1,18 @@
+/**
+ * v1. check50 (not avaliable) style50 :)
+ *
+ * breakout.c
+ *
+ * Elias Svensson
+ * elias.svensson.1992@gmail.com
+ *
+ * Play the classic Breakout game!
+ * Click on screen to begin. 
+ * Move mouse to move paddle.
+ * Enjoy!
+ *
+ */
+
 //
 // breakout.c
 //
