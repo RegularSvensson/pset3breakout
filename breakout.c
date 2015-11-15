@@ -175,6 +175,12 @@ int main(void)
                 
                 // bounce ball off brick 
                 yVelocity = -yVelocity;
+                
+                // increment points
+                points++;
+                
+                // update scoreboard
+                updateScoreboard(window, label, points);
             }
         }
     }
@@ -276,7 +282,22 @@ GRect initPaddle(GWindow window)
 GLabel initScoreboard(GWindow window)
 {
     // TODO
-    return NULL;
+    // initalize scoreboard
+    GLabel label = newGLabel("0");
+    
+    // set scoreboard font
+    setFont(label, "SansSerif-18");
+    
+    // center label in window
+    double x = (getWidth(window) - getWidth(label)) / 2;
+    double y = (getHeight(window) - getHeight(label)) / 2;
+    setLocation(label, x, y);
+    
+    // add scoreboard to window
+    add(window, label);
+    
+    // return GLabel label
+    return label;
 }
 
 /**
