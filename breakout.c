@@ -276,8 +276,9 @@ GRect initPaddle(GWindow window)
 GLabel initScoreboard(GWindow window)
 {
     // TODO
-    // continue here...
-    return NULL;
+    // initalize scoreboard
+    GLabel label = newGLabel("0");
+    
 }
 
 /**
