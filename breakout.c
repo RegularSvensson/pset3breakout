@@ -287,6 +287,9 @@ GLabel initScoreboard(GWindow window)
     double y = (getHeight(window) - getHeight(label)) / 2;
     setLocation(label, x, y);
     
+    // add scoreboard to window
+    add(window, label);
+    
 }
 
 /**
