@@ -175,6 +175,10 @@ int main(void)
                 
                 // bounce ball off brick 
                 yVelocity = -yVelocity;
+                
+                // increment points
+                points++;
+                
             }
         }
     }
