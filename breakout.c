@@ -290,6 +290,8 @@ GLabel initScoreboard(GWindow window)
     // add scoreboard to window
     add(window, label);
     
+    // return GLabel label
+    return label;
 }
 
 /**
