@@ -179,6 +179,8 @@ int main(void)
                 // increment points
                 points++;
                 
+                // update scoreboard
+                updateScoreboard(window, label, points);
             }
         }
     }
